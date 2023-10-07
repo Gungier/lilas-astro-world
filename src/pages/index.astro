@@ -1,0 +1,22 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import AppBar from '../components/AppBar/Appbar'
+import ThreeDEarth from '../components/RotateEarth/ThreeDEarth';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<AppBar client:load/>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<h1 class="heroHeader">{SITE_TITLE}</h1>
+		<h3 class="heroHeader">{SITE_DESCRIPTION}</h3>
+		<!-- <div class="pulse"> -->
+			<!-- <Rotate client:load /> -->
+			<ThreeDEarth client:load/>
+		<!-- </div> -->
+	</body>
+</html>

@@ -1,0 +1,21 @@
+.search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .icon {
+    font-size: 1.2rem;
+  }
+  
